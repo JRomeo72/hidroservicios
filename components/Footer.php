@@ -9,8 +9,8 @@
                 <div class="grid-item item-2">
                     <h3>Contactanos</h3>
                     <?php
-                        include "Contact-icons.php";
-                        include "Social-icons.php";
+                        include "Contact-Icons.php";
+                        include "Social-Icons.php";
                     ?>
                 </div>
             </div>

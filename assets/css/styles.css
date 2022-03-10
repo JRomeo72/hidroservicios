@@ -12,8 +12,6 @@
 html, body {
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
-  width: 100vw;
-  height: 100vh;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -628,7 +626,7 @@ section.conocenos .container .top-section .img img {
   color: var(--light);
 }
 .parallax__container .mask .parallax-container .contenido p {
-  font-size: 20px;
+  font-size: 26px;
 }
 .parallax__container .parallax {
   position: fixed;
@@ -1048,7 +1046,7 @@ footer .container .grid-container-out .grid-container-in .item-2 .social-icons i
   background: -webkit-gradient(linear, left top, right top, from(#004e92), to(#000428));
   background: linear-gradient(to right, #004e92, #000428);
   color: #fff;
-  height: 100%;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
