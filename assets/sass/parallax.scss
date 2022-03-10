@@ -1,0 +1,70 @@
+.parallax__container {
+	clip: rect(0, auto, auto, 0);
+	height: 500px;
+	left: 0;
+	/* overflow: hidden; */
+	position: absolute;
+	/* top: 0; */
+	width: 100%;
+	z-index: 1;
+    background-color: #2898CB;
+
+    .mask {
+        background-color: #00000050;
+        height: 100%;
+        /* padding: 12rem 0; */
+        position: relative;
+        z-index: 100;
+
+        .parallax-container {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .contenido {
+                color: $white;
+                padding: 15px 40px;
+                border-radius: 5px;
+                max-width: 1000px;
+                background-color: rgba(var(--dark-op) / 0.5);
+                backdrop-filter: blur(10px);
+                
+                h2 {
+                    font-size: 36px;
+                    color: var(--light);
+                }
+
+                p{
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+    .parallax {
+        // background-image: url('../img/ingenieros.jpg');
+        position: fixed;
+        /* top: 0; */
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        -webkit-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        width: 100%;
+    
+    
+        /* BG behaviour */
+        // background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+}
+
+
+
+
+
+
+
+

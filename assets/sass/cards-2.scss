@@ -1,0 +1,134 @@
+section.cards-2 {
+    padding-block: 50px;
+    // background-color: $light;
+    
+    .container {
+        text-align: center;
+        // padding-inline: 20px;
+
+
+        .cards {
+            // border: 1px solid blue;
+            padding-block: 10px;
+            .contact {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                padding-block: 10px;
+                // border: 1px solid red;
+
+                div {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    // background-color: $white;
+                    background-color: $light;
+                    color: $dark;
+                    font-weight: 500;
+                    border-radius: 5px;
+                    margin-inline: 10px;
+                    margin-block: 10px;
+                    padding: 30px 30px 10px 30px;
+                    // padding-inline: 30px;
+                    width: 260px;
+                    height: 200px;
+                    @include box-shadow-l();
+                    // border: 1px solid red;
+
+                    i {
+                        background-color: $dark;
+                        // background-color: $light;
+                        color: $white;
+                        // color: $dark;
+                        width: 56px;
+                        height: 56px;
+                        padding-top: 13px;
+                        font-size: 30px;
+                        border-radius: 5px;
+                        margin-bottom: 20px;
+                        @include box-shadow-m();
+                    }
+                }
+
+                /*div {
+                    display: flex;
+                    align-items: center;
+                    background-color: $light;
+                    color: $dark;
+                    font-weight: 500;
+                    border-top-left-radius: 50px;
+                    border-bottom-left-radius: 50px;
+                    margin-inline: 10px;
+                    margin-block: 10px;
+                    padding: 5px;
+                    width: 220px;
+                    // height: 200px;
+                    @include box-shadow-l();
+                    // border: 1px solid red;
+
+                    i {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin-right: 10px;
+                        background-color: $dark;
+                        color: $white;
+                        width: 56px;
+                        height: 56px;
+                        font-size: 30px;
+                        border-radius: 50px;
+                        @include box-shadow-m();
+                    }
+
+                    
+                }
+                
+                .mail {
+                    width: 296px;
+                }
+
+                .adress {
+                    width: 350px;
+                    p {
+                        width: 250px;
+                    }
+                }*/
+            }
+
+            @media (max-width: 1159px) {
+                .contact {
+                    max-width: 700px;
+                    margin-inline: auto;
+                    // border: 1px solid red;
+                }
+            }
+        }
+
+        .social-cards {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-around;
+            max-width: 500px;
+            margin-inline: auto;
+            // border: 1px solid red;
+
+            a:hover > i {
+                background-color: $dark-light;
+                transition:  background-color ease 350ms
+            }
+
+            i {
+                background-color: $dark;
+                color: $white;
+                font-size: 30px;
+                border-radius: 5px;
+                width: 50px;
+                height: 50px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                @include box-shadow-m()
+            }
+        }
+    }
+}

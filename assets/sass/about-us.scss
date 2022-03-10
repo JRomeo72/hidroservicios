@@ -1,0 +1,48 @@
+section.conocenos {
+    padding: 50px 40px;
+
+    .container {
+
+        .top-section {
+            max-width: 1000px;
+            display: grid;
+            gap: 30px;
+            grid-template-columns: 1fr 300px;
+            margin-inline: auto;
+
+            .texto {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                h2 {
+                    margin-bottom: 20px;
+                }
+            }
+
+            .img {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+
+                img {
+                    width: 200px;
+                }
+            }
+
+            @media (max-width: 660px) {
+                & {
+                    grid-template-columns: 1fr;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 350px) {
+
+        & {
+            padding-inline: 20px;
+        }
+    }
+}
+

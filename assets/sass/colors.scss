@@ -1,0 +1,22 @@
+
+$dark: #004B8F;
+$dark-light: #5392C2;
+$light: #E6E6E6;
+$white: white;
+$bg-card: #F1F1F1;
+
+@mixin box-shadow-m () {
+    box-shadow:
+    1px 2px 2px hsl(0deg 0% 30% / 0.5),
+    2px 4px 4px hsl(0deg 0% 30% / 0.5),
+    4px 8px 8px hsl(0deg 0% 30% / 0.3);
+}
+
+@mixin box-shadow-l () {
+    box-shadow:
+    1px 2px 2px hsl(0deg 0% 30% / 0.1),
+    2px 4px 4px hsl(0deg 0% 30% / 0.1),
+    4px 8px 8px hsl(0deg 0% 30% / 0.1),
+    8px 16px 16px hsl(0deg 0% 30% / 0.1),
+    16px 32px 32px hsl(0deg 0% 30% / 0.1);
+}
