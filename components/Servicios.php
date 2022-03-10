@@ -1,23 +1,22 @@
 <?php
-    session_start();
     $images = array(
-        "/assets/img/servicios/bomba-centrífuga.jpg",
+        "/assets/img/servicios/bomba-centrifuga.jpg",
         "/assets/img/servicios/bomba-sumergible.jpg",
-        "/assets/img/servicios/bomba-centrífuga.jpg",
+        "/assets/img/servicios/bomba-centrifuga.jpg",
         "/assets/img/servicios/bomba-sumergible.jpg",
-        "/assets/img/servicios/bomba-centrífuga.jpg",
+        "/assets/img/servicios/bomba-centrifuga.jpg",
         "/assets/img/servicios/bomba-sumergible.jpg",
-        "/assets/img/servicios/bomba-centrífuga.jpg",
+        "/assets/img/servicios/bomba-centrifuga.jpg",
         "/assets/img/servicios/bomba-sumergible.jpg",
-        "/assets/img/servicios/bomba-centrífuga.jpg",
+        "/assets/img/servicios/bomba-centrifuga.jpg",
         "/assets/img/servicios/bomba-sumergible.jpg",
-        "/assets/img/servicios/bomba-centrífuga.jpg",
+        "/assets/img/servicios/bomba-centrifuga.jpg",
         "/assets/img/servicios/bomba-sumergible.jpg",
-        "/assets/img/servicios/bomba-centrífuga.jpg",
+        "/assets/img/servicios/bomba-centrifuga.jpg",
         "/assets/img/servicios/bomba-sumergible.jpg",
-        "/assets/img/servicios/bomba-centrífuga.jpg",
+        "/assets/img/servicios/bomba-centrifuga.jpg",
         "/assets/img/servicios/bomba-sumergible.jpg",
-        "/assets/img/servicios/bomba-centrífuga.jpg",
+        "/assets/img/servicios/bomba-centrifuga.jpg",
         "/assets/img/servicios/bomba-sumergible.jpg",
     );
 
