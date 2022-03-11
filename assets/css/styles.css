@@ -59,15 +59,11 @@ p {
 .btn {
   padding: 6px 20px;
   border-radius: 5px;
-  -webkit-box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.301);
-          box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.301);
 }
 .btn.btn-primary {
   background-color: #E6E6E6;
   color: #004B8F;
   font-weight: 500;
-  -webkit-box-shadow: 12x 12px 4px 4px rgba(0, 0, 0, 0.61);
-          box-shadow: 12x 12px 4px 4px rgba(0, 0, 0, 0.61);
   -webkit-transition: background-color ease 350ms;
   transition: background-color ease 350ms;
 }
