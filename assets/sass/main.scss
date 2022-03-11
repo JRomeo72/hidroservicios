@@ -68,13 +68,15 @@ p {
 }
 
 .btn {
-    padding: 6px 12px;
+    padding: 6px 20px;
     border-radius: 5px;
+    box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.301);
 
     &.btn-primary {
-        background-color: $dark;
-        color: $white;
+        background-color: $light;
+        color: $dark;
         font-weight: 500;
+        box-shadow: 12x 12px 4px 4px rgba(0, 0, 0, 0.61);
         transition: background-color ease 350ms;
 
         &:hover {
