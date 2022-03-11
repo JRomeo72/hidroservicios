@@ -13,6 +13,6 @@
     </div>
     <div class="adress">
         <i class="fa-solid fa-location-dot"></i>
-        <p>2 Av Norte y, 23 Calle Poniente No 1304, San Salvador</p>
+        <p>2º Av Nte. y 23 Calle Poniente #1304, San Salvador</p>
     </div>
 </div>

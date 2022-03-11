@@ -66,3 +66,20 @@ p {
 .animalo {
     opacity: 0;
 }
+
+.btn {
+    padding: 6px 12px;
+    border-radius: 5px;
+
+    &.btn-primary {
+        background-color: $dark;
+        color: $white;
+        font-weight: 500;
+        transition: background-color ease 350ms;
+
+        &:hover {
+            background-color: $dark-light;
+            color: $light;
+        }
+    }
+}

@@ -25,10 +25,39 @@
                     </p>
                 </div>
                 <div class="grid-item item-4">
-                    <h3>Hidroservicios</h3>
-                    <p>
-                        Hidroservicios es una Empresa comprometida y socialmente responsable con nuestro medio ambiente, enfocados en mantener la sostenibilidad de las zonas verde y sus mantos acuíferos bajo las normas de ley de nuestro país.
-                    </p>
+                    <h3>Ultimos proyectos</h3>
+                    <div class="projects-container">
+                        <a href="#" class="link">
+                            <div class="project-item">
+                                <div class="img">
+                                    <img src="/assets/img/proyectos/project-cover.jpg" alt="Proyecto">
+                                </div>
+                                <div class="text">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae, itaque.</p>
+                                </div>
+                            </div>
+                        </a>    
+                        <a href="#" class="link">
+                            <div class="project-item">
+                                <div class="img">
+                                    <img src="/assets/img/proyectos/project-cover.jpg" alt="Proyecto">
+                                </div>
+                                <div class="text">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae, itaque.</p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#" class="link">
+                            <div class="project-item">
+                                <div class="img">
+                                    <img src="/assets/img/proyectos/project-cover.jpg" alt="Proyecto">
+                                </div>
+                                <div class="text">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae, itaque.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
 

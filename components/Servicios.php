@@ -41,9 +41,10 @@
         "Personal tecnico altamente calificado."
     );
 
-    $clase = "grid-template";
+    $size = count($texto);
 
-    $contador = 18;
+    $animalo="animalo";
+    $effect="fadeInRight";
 
     require "./functions/CardRenderer.php";
     
@@ -55,8 +56,10 @@
             <div class="grid-container">
 
                 <?php
-                    for ($i=0; $i < $contador ; $i++) { 
-                        echo CardRenderer($clase, $images[$i], $texto[$i]);
+                    for ($i=0; $i < $size ; $i++) {
+                        echo "<div class='grid-item card-container'>";
+                        echo CardRenderer($images[$i], $texto[$i], null, $animalo, $effect);
+                        echo "</div>";
                     }
                 ?>
 

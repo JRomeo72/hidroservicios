@@ -1,15 +1,22 @@
 <?php
-    function CardRenderer($valor1, $valor2, $valor3) {
+    function CardRenderer($image="", $texto="", $link="", $animalo="", $effect="") {
+        if($link == ""){
+            $boton="";
+        }else{
+            $boton = '<a href='.$link.' class="btn btn-primary">Leer más</a>';
+        };
+
         echo 
-        '<div class="'.$valor1.' card-container">
-            <div class="card">
-                <div class="img">
-                    <img src="'.$valor2.'" alt="">
-                </div>
-                <div class="text">
-                    <p>'.$valor3.'</p>
-                </div>
+        "<div class='card $animalo' data-animate-effect='$effect'>
+            <div class='img'>
+                <img src='$image'alt='img'>
             </div>
-        </div>';
+            <div class='text'>
+                <p>$texto</p>
+            </div>
+            <div class='boton'>
+                $boton
+            </div>
+        </div>";
     }
 ?>

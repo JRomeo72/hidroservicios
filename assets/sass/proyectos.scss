@@ -1,0 +1,53 @@
+section.proyectos {
+    padding: 60px 20px;
+
+    .container {
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .container-card-renderer {
+
+            .grid-container {
+                display: grid;
+                column-gap: 10px;
+                row-gap: 30px;
+                grid-auto-rows: 400px;
+                grid-template-columns: repeat(auto-fit, minmax(min(100%, 350px), 1fr));
+
+                .grid-item {
+                    display: flex;
+                    justify-content: center;
+                    
+
+                    .card {
+                        max-width: 350px;
+                        padding: 20px;
+                        border-top: 1px solid #adadad2a;
+                        border-radius: 5px;
+                        position: relative;
+                        @include box-shadow-l();
+
+                        .img {
+
+                            img {
+                                width: 100%;
+                            }
+
+                        }
+
+                        .boton {
+                            position: absolute;
+                            bottom: 30px;
+
+                        }
+
+                    }
+
+                }
+            }
+        }
+    }
+}
