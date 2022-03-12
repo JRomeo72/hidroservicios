@@ -39,6 +39,8 @@ p {
 
 .container {
   max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
   margin-inline: auto;
 }
 
@@ -75,7 +77,11 @@ p {
 }
 
 header .top-bar {
+  padding-left: 30px;
+  padding-right: 30px;
   padding-inline: 30px;
+  margin-top: 20px;
+  margin-bottom: 10px;
   margin-block: 20px 10px;
 }
 header .top-bar .container {
@@ -189,6 +195,8 @@ nav .nav-container .brand {
   color: white;
   position: absolute;
   height: 100%;
+  padding-left: 50px;
+  padding-right: 50px;
   padding-inline: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -305,18 +313,25 @@ nav .nav-container .menu-toggle.open .toggle::after {
             justify-content: center;
     border: none;
     max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
     margin-inline: auto;
   }
   nav .nav-container .navbar ul {
     width: 90%;
     max-width: 1200px;
+    padding-top: 5px;
+    padding-bottom: 10px;
     padding-block: 5px 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
     margin-block: 15px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    -webkit-transition: margin 350ms;
     -webkit-transition: margin-block 350ms;
     transition: margin-block 350ms;
   }
@@ -351,6 +366,8 @@ nav .nav-container .menu-toggle.open .toggle::after {
     display: none;
   }
   nav .switchColor .navbar > ul {
+    margin-top: 0;
+    margin-bottom: 0;
     margin-block: 0;
   }
 }
@@ -482,6 +499,8 @@ nav .nav-container .menu-toggle.open .toggle::after {
 }
 
 .brands {
+  margin-top: 80px;
+  margin-bottom: 30px;
   margin-block: 80px 30px;
 }
 .brands h3 {
@@ -499,6 +518,8 @@ nav .nav-container .menu-toggle.open .toggle::after {
 }
 .brands .brand-items .brand-item {
   width: 170px;
+  margin-left: auto;
+  margin-right: auto;
   margin-inline: 10px;
 }
 .brands .brand-items .brand-item img {
@@ -507,6 +528,8 @@ nav .nav-container .menu-toggle.open .toggle::after {
 
 section.cards-1 {
   background-color: #E6E6E6;
+  padding-top: 80px;
+  padding-bottom: 10px;
   padding-block: 80px 60px;
 }
 section.cards-1 .container h3 {
@@ -559,6 +582,8 @@ section.conocenos .container .top-section {
   gap: 30px;
   -ms-grid-columns: 1fr 30px 300px;
   grid-template-columns: 1fr 300px;
+  margin-left: auto;
+  margin-right: auto;
   margin-inline: auto;
 }
 section.conocenos .container .top-section .texto {
@@ -596,6 +621,8 @@ section.conocenos .container .top-section .img img {
 }
 @media (max-width: 350px) {
   section.conocenos {
+    padding-left: 20px;
+    padding-right: 20px;
     padding-inline: 20px;
   }
 }
@@ -693,6 +720,8 @@ section.principios .container .grid-container .grid-item .icon i {
 }
 @media (min-width: 600px) and (max-width: 899px) {
   section.principios {
+    padding-left: 30px;
+    padding-right: 30px;
     padding-inline: 100px;
   }
 }
@@ -704,6 +733,8 @@ section.principios .container .grid-container .grid-item .icon i {
 }
 @media (max-width: 350px) {
   section.principios {
+    padding-left: 20px;
+    padding-right: 20px;
     padding-inline: 20px;
   }
   section.principios .container h3 {
@@ -812,12 +843,16 @@ section.proyectos .container .container-card-renderer .grid-container .grid-item
 }
 
 section.cards-2 {
+  padding-top: 50px;
+  padding-bottom: 50px;
   padding-block: 50px;
 }
 section.cards-2 .container {
   text-align: center;
 }
 section.cards-2 .container .cards {
+  padding-top: 10px;
+  padding-bottom: 10px;
   padding-block: 10px;
 }
 section.cards-2 .container .cards .contact {
@@ -828,6 +863,8 @@ section.cards-2 .container .cards .contact {
       flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  padding-top: 10px;
+  padding-bottom: 10px;
   padding-block: 10px;
   /*div {
       display: flex;
@@ -888,7 +925,11 @@ section.cards-2 .container .cards .contact div {
   color: #004B8F;
   font-weight: 500;
   border-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
   margin-inline: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   margin-block: 10px;
   padding: 30px 30px 10px 30px;
   width: 260px;
@@ -911,6 +952,8 @@ section.cards-2 .container .cards .contact div i {
 @media (max-width: 1159px) {
   section.cards-2 .container .cards .contact {
     max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
     margin-inline: auto;
   }
 }
@@ -922,6 +965,8 @@ section.cards-2 .container .social-cards {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
   margin-inline: auto;
 }
 section.cards-2 .container .social-cards a:hover > i {
@@ -1073,6 +1118,8 @@ section.form .contact-wrapper .contact-info img {
 }
 @media (max-width: 450px) {
   section.form {
+    padding-left: 15px;
+    padding-right: 15px;
     padding-inline: 15px;
   }
 }
@@ -1100,6 +1147,8 @@ footer .container .grid-container-out .grid-container-in {
 }
 footer .container .grid-container-out .grid-container-in .grid-item {
   max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
   margin-inline: auto;
   margin-bottom: 20px;
 }
