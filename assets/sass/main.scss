@@ -44,7 +44,7 @@ p {
 
 .container {
     max-width: 1200px;
-    margin-inline: auto;
+    @include margin-inline(auto);
 }
 
 .box-shadow-m {

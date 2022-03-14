@@ -19,7 +19,7 @@ footer {
 
                 .grid-item{
                     max-width: 300px;
-                    margin-inline: auto;
+                    @include margin-inline(auto);
                     margin-bottom: 20px;
                     // border: 1px solid red;
                 }

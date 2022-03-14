@@ -1,6 +1,6 @@
 section.cards-1 {
     background-color: $light;
-    padding-block: 80px 60px;
+    @include padding-block(80px, 60px);
 
     .container {
 

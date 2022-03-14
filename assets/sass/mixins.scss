@@ -1,0 +1,67 @@
+@mixin margin-inline($left, $right:null) {
+
+    @if($left == $right or $right == null) {
+        @supports not ( margin-inline: $left ) {
+            margin-left: $left;
+            margin-right: $left;
+        }
+        margin-inline: $left;
+    }@else{
+        @supports not ( margin-inline: $left $right ) {
+            margin-left: $left;
+            margin-right: $right;
+        }
+        margin-inline: $left $right;
+    }
+}
+
+@mixin margin-block($top, $bottom:null) {
+
+    @if($top == $bottom or $bottom == null) {
+        @supports not ( margin-block: $top ) {
+            margin-top: $top;
+            margin-bottom: $top;
+        }
+        margin-block: $top;
+    }@else{
+        @supports not ( margin-block: $top $bottom ) {
+            margin-top: $top;
+            margin-bottom: $bottom;
+        }
+        margin-block: $top $bottom;
+    }
+}
+
+@mixin padding-inline($left, $right:null) {
+
+    @if($left == $right or $right == null) {
+        @supports not (padding-inline: $left) {
+            padding-left: $left;
+            padding-right: $left;
+        }
+        padding-inline: $left;
+    }@else{
+        @supports not (padding-inline: $left $right) {
+            padding-left: $left;
+            padding-right: $right;
+        }
+        padding-inline: $left $right;
+    }
+}
+
+@mixin padding-block($top, $bottom:null) {
+
+    @if($top == $bottom or $bottom == null) {
+        @supports not (padding-block: $top) {
+            padding-top: $top;
+            padding-bottom: $top;
+        }
+        padding-block: $top;
+    }@else{
+        @supports not (padding-block: $top $bottom) {
+            padding-top: $top;
+            padding-bottom: $bottom;
+        }
+        padding-block: $top $bottom;
+    }
+}

@@ -43,7 +43,7 @@ section.principios {
     @media (min-width: 600px) and (max-width: 899px) {
     
         & {
-            padding-inline: 100px;
+            @include padding-inline(100px);
         }
     }
 
@@ -57,10 +57,10 @@ section.principios {
         }
     }
 
-    @media (max-width: 350px) {
+    @media (max-width: 450px) {
         
         & {
-            padding-inline: 20px;
+            @include padding-inline(20px);
     
             .container {
 

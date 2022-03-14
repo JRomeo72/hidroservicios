@@ -1,5 +1,5 @@
 .brands {
-    margin-block: 80px 30px;
+    @include margin-block(80px, 30px);
 
     h3 {
         text-align: center;
@@ -12,7 +12,7 @@
 
         .brand-item {
             width: 170px;
-            margin-inline: 10px;
+            @include margin-inline(10px);
             // border: 1px solid red;
 
             img {

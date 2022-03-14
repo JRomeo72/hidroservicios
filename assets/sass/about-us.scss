@@ -8,7 +8,7 @@ section.conocenos {
             display: grid;
             gap: 30px;
             grid-template-columns: 1fr 300px;
-            margin-inline: auto;
+            @include margin-inline(auto);
 
             .texto {
                 display: flex;
@@ -41,7 +41,7 @@ section.conocenos {
     @media (max-width: 350px) {
 
         & {
-            padding-inline: 20px;
+            @include padding-inline(20px);
         }
     }
 }

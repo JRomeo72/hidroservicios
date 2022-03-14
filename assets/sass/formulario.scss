@@ -127,7 +127,7 @@ section.form {
 
     @media (max-width: 450px) {
         & {
-            padding-inline: 15px;
+            @include padding-inline(15px);
         }
     }
 }

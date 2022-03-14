@@ -1,8 +1,8 @@
 header {
 
     .top-bar {
-        padding-inline: 30px;
-        margin-block: 20px 10px;
+        @include padding-inline(30px);
+        @include margin-block(20px, 10px);
 
         .container {
             display: flex;
@@ -83,7 +83,8 @@ header {
                 align-items: center;
 
                 .logo {
-                    width: 200px;
+                    width: 100%;
+                    max-width: 300px;
                 }
             }
         }
@@ -105,9 +106,9 @@ nav {
             color: $white;
             position: absolute;
             height: 100%;
-            padding-inline: 50px;
             display: flex;
             align-items: center;
+            @include padding-inline(50px);
         }
 
         .navbar {
@@ -116,9 +117,17 @@ nav {
             right: 0;
             // background-color: $dark-light;
             width: 100%;
+            border: 1px solid $white;
+            // transform: translateX(0);
             clip-path: circle(0% at top right);
             transition: clip-path ease 700ms;
-            border: 1px solid $white;
+
+            @supports not (clip-path: circle(0%)) {
+                & {
+                    transform: translateX(100%);
+                    transition: transform ease 700ms;
+                }
+            }
 
             ul {
 
@@ -171,8 +180,13 @@ nav {
         }
 
         .nav-hidden {
-            // height: auto;
+            height: auto;
             clip-path: circle(150% at top right);
+            @supports (clip-path: circle(150%)) {
+                & {
+                    transform: translateX(0);
+                }
+            }
         }
 
         .menu-toggle {
@@ -237,16 +251,17 @@ nav {
                 justify-content: center;
                 border: none;
                 max-width: 1200px;
-                margin-inline: auto;
+                transform: initial;
+                @include margin-inline(auto);
 
                 ul {
                     width: 90%;
                     max-width: 1200px;
-                    padding-block: 5px 10px;
-                    margin-block: 15px;
                     display: flex;
                     justify-content: space-around;
                     transition: margin-block 350ms;
+                    @include padding-block(5px, 10px);
+                    @include margin-block(15px);
 
                     li {
                         border-bottom: none;
@@ -296,7 +311,7 @@ nav {
         .switchColor {
 
             .navbar > ul {
-                margin-block: 0;
+                @include margin-block(0);
             }
         }
 
