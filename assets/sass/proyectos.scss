@@ -12,10 +12,16 @@ section.proyectos {
 
             .grid-container {
                 display: grid;
+                grid-column-gap: 10px;
+                grid-row-gap: 30px;
                 column-gap: 10px;
                 row-gap: 30px;
                 grid-auto-rows: 400px;
                 grid-template-columns: repeat(auto-fit, minmax(min(100%, 350px), 1fr));
+
+                @supports not (grid-template-columns: repeat(auto-fit, minmax(min(100%, 350px), 1fr))) {
+                    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+                }
 
                 .grid-item {
                     display: flex;
@@ -26,6 +32,7 @@ section.proyectos {
                         max-width: 350px;
                         padding: 20px;
                         border-top: 1px solid #adadad2a;
+                        border-left: 1px solid #adadad2a;
                         border-radius: 5px;
                         position: relative;
                         @include box-shadow-l();

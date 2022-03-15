@@ -5,23 +5,51 @@ footer {
 
     .container{
         margin: 50px auto;
-        max-width: 1200px;
+        max-width: 1400px;
 
         .grid-container-out{
             display: grid;
+            grid-gap: 40px;
             gap: 40px;
             grid-template-columns: repeat(auto-fit, minmax(min(100%, 550px), 1fr));
 
+            @supports not (grid-template-columns: repeat(auto-fit, minmax(min(100%, 550px), 1fr))) {
+                grid-template-columns: repeat(auto-fit, minmax(660px, 1fr));
+
+                @media (max-width: 700px) {
+
+                    & {
+                        grid-template-columns: 100%;
+                    }
+
+                }
+            }
+
             .grid-container-in{
                 display: grid;
+                grid-gap: 40px;
                 gap: 40px;
                 grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr));
 
                 .grid-item{
-                    max-width: 300px;
-                    @include margin-inline(auto);
+                    max-width: 350px;
                     margin-bottom: 20px;
-                    // border: 1px solid red;
+                    @include margin-inline(auto);
+                }
+
+                @supports not (grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr))) {
+                    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+                    & .grid-item {
+                        max-width: 400px;
+                    }
+
+                    @media screen and (max-width: 320px) {
+
+                        & {
+                            grid-template-columns: 100%;
+                        }
+                    }
                 }
 
                 // ! ITEM 2
@@ -80,16 +108,15 @@ footer {
                         flex-direction: column;
 
                         a {
-                            // border: 1px solid black;
 
                             .project-item {
                                 display: flex;
                                 margin-bottom: 10px;
     
                                 .img {
-                                    width: 50px;
-                                    height: 56px;
-                                    margin-right: 10px;
+                                    width: 54px;
+                                    height: 60px;
+                                    margin-right: 20px;
                                     border-radius: 5px;
                                     border: 1px solid rgba(0, 0, 0, 0);
                                     overflow: hidden;

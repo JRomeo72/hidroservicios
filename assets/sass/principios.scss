@@ -15,6 +15,7 @@ section.principios {
         .grid-container {
             display: grid;
             gap: 40px;
+            grid-gap: 40px;
             grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 
             .grid-item {

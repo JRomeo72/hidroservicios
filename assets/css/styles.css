@@ -771,6 +771,7 @@ section.principios .container .grid-container {
   display: -ms-grid;
   display: grid;
   gap: 40px;
+  grid-gap: 40px;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 }
 section.principios .container .grid-container .grid-item {
@@ -839,12 +840,14 @@ section.servicios .container h2 {
 section.servicios .container .container-card-renderer .grid-container {
   display: -ms-grid;
   display: grid;
-  row-gap: 20px;
-  -webkit-column-gap: 20px;
-     -moz-column-gap: 20px;
-          column-gap: 20px;
+  grid-gap: 20px;
+  gap: 20px;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr));
-  grid-auto-rows: 130px;
+}
+@supports not (grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr))) {
+  section.servicios .container .container-card-renderer .grid-container {
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  }
 }
 section.servicios .container .container-card-renderer .grid-container .card-container {
   display: -webkit-box;
@@ -861,7 +864,8 @@ section.servicios .container .container-card-renderer .grid-container .card-cont
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 400px;
+  width: 100%;
+  max-width: 400px;
   padding: 20px;
   background-color: white;
   border-radius: 5px;
@@ -889,12 +893,19 @@ section.proyectos .container h2 {
 section.proyectos .container .container-card-renderer .grid-container {
   display: -ms-grid;
   display: grid;
+  grid-column-gap: 10px;
+  grid-row-gap: 30px;
   -webkit-column-gap: 10px;
      -moz-column-gap: 10px;
           column-gap: 10px;
   row-gap: 30px;
   grid-auto-rows: 400px;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 350px), 1fr));
+}
+@supports not (grid-template-columns: repeat(auto-fit, minmax(min(100%, 350px), 1fr))) {
+  section.proyectos .container .container-card-renderer .grid-container {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  }
 }
 section.proyectos .container .container-card-renderer .grid-container .grid-item {
   display: -webkit-box;
@@ -908,6 +919,7 @@ section.proyectos .container .container-card-renderer .grid-container .grid-item
   max-width: 350px;
   padding: 20px;
   border-top: 1px solid #adadad2a;
+  border-left: 1px solid #adadad2a;
   border-radius: 5px;
   position: relative;
   -webkit-box-shadow: 1px 2px 2px rgba(77, 77, 77, 0.1), 2px 4px 4px rgba(77, 77, 77, 0.1), 4px 8px 8px rgba(77, 77, 77, 0.1), 8px 16px 16px rgba(77, 77, 77, 0.1), 16px 32px 32px rgba(77, 77, 77, 0.1);
@@ -1016,7 +1028,7 @@ section.cards-2 .container .cards .contact div {
   color: #004B8F;
   font-weight: 500;
   border-radius: 5px;
-  margin: 10px;
+  margin: 10px 10px 20px 10px;
   padding: 30px 30px 10px 30px;
   width: 260px;
   height: 200px;
@@ -1104,11 +1116,12 @@ section.form .contact-wrapper > * {
   padding: 30px;
 }
 section.form .contact-wrapper .contact-form h3 {
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 section.form .contact-wrapper .contact-form form {
   display: -ms-grid;
   display: grid;
+  grid-gap: 30px;
   gap: 30px;
 }
 section.form .contact-wrapper .contact-form form input, section.form .contact-wrapper .contact-form form textarea, section.form .contact-wrapper .contact-form form button {
@@ -1136,7 +1149,7 @@ section.form .contact-wrapper .contact-form form button:hover, section.form .con
 }
 @media (min-width: 700px) {
   section.form .contact-wrapper .contact-form form {
-    -ms-grid-columns: 1fr 1fr;
+    -ms-grid-columns: 1fr 30px 1fr;
     grid-template-columns: 1fr 1fr;
   }
   section.form .contact-wrapper .contact-form form .block {
@@ -1229,29 +1242,54 @@ footer {
 }
 footer .container {
   margin: 50px auto;
-  max-width: 1200px;
+  max-width: 1400px;
 }
 footer .container .grid-container-out {
   display: -ms-grid;
   display: grid;
+  grid-gap: 40px;
   gap: 40px;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 550px), 1fr));
+}
+@supports not (grid-template-columns: repeat(auto-fit, minmax(min(100%, 550px), 1fr))) {
+  footer .container .grid-container-out {
+    grid-template-columns: repeat(auto-fit, minmax(660px, 1fr));
+  }
+  @media (max-width: 700px) {
+    footer .container .grid-container-out {
+      grid-template-columns: 100%;
+    }
+  }
 }
 footer .container .grid-container-out .grid-container-in {
   display: -ms-grid;
   display: grid;
+  grid-gap: 40px;
   gap: 40px;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr));
 }
 footer .container .grid-container-out .grid-container-in .grid-item {
-  max-width: 300px;
-  margin-inline: auto;
+  max-width: 350px;
   margin-bottom: 20px;
+  margin-inline: auto;
 }
 @supports not (margin-inline: auto) {
   footer .container .grid-container-out .grid-container-in .grid-item {
     margin-left: auto;
     margin-right: auto;
+  }
+}
+@supports not (grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr))) {
+  footer .container .grid-container-out .grid-container-in {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  footer .container .grid-container-out .grid-container-in .grid-item {
+    max-width: 400px;
+  }
+  @media screen and (max-width: 320px) {
+    footer .container .grid-container-out .grid-container-in {
+      grid-template-columns: 100%;
+    }
   }
 }
 footer .container .grid-container-out .grid-container-in .item-2 .contact-icons {
@@ -1318,9 +1356,9 @@ footer .container .grid-container-out .grid-container-in .item-4 .projects-conta
   margin-bottom: 10px;
 }
 footer .container .grid-container-out .grid-container-in .item-4 .projects-container a .project-item .img {
-  width: 50px;
-  height: 56px;
-  margin-right: 10px;
+  width: 54px;
+  height: 60px;
+  margin-right: 20px;
   border-radius: 5px;
   border: 1px solid rgba(0, 0, 0, 0);
   overflow: hidden;
