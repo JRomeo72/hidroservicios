@@ -167,6 +167,17 @@ footer {
         //     }
 
         // }
+        hr {
+            @include margin-block(30px);
+            opacity: 0.4;
+        }
+
+        .copyright {
+
+            p {
+                text-align: center;
+            }
+        }
     }
 
 }

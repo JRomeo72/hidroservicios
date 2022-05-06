@@ -63,4 +63,8 @@
 
         </div>
     </div>
+    <hr />
+    <div class="copyright">
+        <p>Design 2U - Marzo 2022.</p>
+    </div>
 </div>
